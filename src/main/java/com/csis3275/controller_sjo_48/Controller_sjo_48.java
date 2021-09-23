@@ -13,7 +13,7 @@ public class Controller_sjo_48 {
 	@RequestMapping("/")
 	public String presentForm(ModelMap model) {
 		 model.addAttribute("bicycleData", new Bicycle_sjo_48());
-		 return "AssignmentView";
+		 return "AssignmentView_sjo_48";
 	}
 	
 	@PostMapping("/confirmation")
@@ -32,6 +32,6 @@ public class Controller_sjo_48 {
 		 model.addAttribute("memberDiscount", bicycleData.memberDiscount);
 		 model.addAttribute("bicycleData", new Bicycle_sjo_48());
 	
-		 return "AssignmentView";
+		 return "AssignmentView_sjo_48";
 	 }
 }
