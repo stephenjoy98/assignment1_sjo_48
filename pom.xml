@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.csis3275_sjo_48</groupId>
-	<artifactId>assignment1_sjo_48</artifactId>
+	<artifactId>SpringBootLab_sjo_48</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>assignment1_sjo_48</name>
-	<description>Assignment 1</description>
+	<name>SpringBootLab_sjo_48</name>
+	<description>WeatherApp</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -24,14 +24,26 @@
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
-			<scope>runtime</scope>
-			<optional>true</optional>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		
+		<!-- Embedded Tomcat -->
+		<dependency>
+		 <groupId>org.apache.tomcat.embed</groupId>
+		 <artifactId>tomcat-embed-jasper</artifactId>
+		</dependency>
+		
+		<!-- JSTL for JSP -->
+		<dependency>
+		 <groupId>javax.servlet</groupId>
+		 <artifactId>jstl</artifactId>
+		</dependency>
+		
+		<!-- Spring dev tools -->
+		<dependency>
+		 <groupId>org.springframework.boot</groupId>
+		 <artifactId>spring-boot-devtools</artifactId>
 		</dependency>
 	</dependencies>
 
